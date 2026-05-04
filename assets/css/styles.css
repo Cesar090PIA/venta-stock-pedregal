@@ -21,11 +21,18 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     width: 80%;
-    height: 80px;
+    height: 90px;
     padding: 15px;
     border-bottom: 1px solid #111;
+}
+
+nav img {
+    width: 180px;
+    max-width: 60vw;
+    height: auto;
+    display: block;
 }
 
 /* CONTENIDO */
@@ -36,13 +43,26 @@ article {
     width: 100%;
 }
 
+/* TITULO */
+.titulo {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.titulo h3,
+.titulo h2 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
 /* CATÁLOGO */
 .catalogos {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    padding: 40px 20px 70px;
+    padding: 25px 20px 70px;
 }
 
 .catalogo-enlace {
@@ -70,7 +90,6 @@ article {
 .boton-click {
     display: flex;
     justify-content: center;
-    width: auto;
     margin-top: 24px;
 }
 
@@ -78,8 +97,6 @@ article {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
     padding: 14px 34px;
     border: 1px solid #111;
     background-color: transparent;
@@ -105,8 +122,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
     background-color: black;
+    height: 50px;
 }
 
 footer a {
@@ -137,24 +154,29 @@ footer a {
 @media (max-width: 600px) {
     nav {
         width: 92%;
-        height: 100px;
-        padding: 18px;
+        height: 90px;
     }
 
-nav img {
-    width: 180px;
-    max-width: 60vw;
-    height: auto;
-    align-items: center;
-}
+    nav img {
+        width: 165px;
+    }
+
+    .titulo {
+        padding: 35px 20px 20px;
+    }
+
+    .titulo h3,
+    .titulo h2 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
 
     .catalogos {
-        padding: 45px 16px 90px;
+        padding: 25px 16px 90px;
     }
 
     .catalogo-enlace {
         width: 92vw;
-        max-width: 92vw;
     }
 
     .boton-click a {
@@ -170,27 +192,4 @@ nav img {
     .whatsapp-btn img {
         width: 56px;
     }
-
-    .titulo {
-    text-align: center;
-    padding: 50px 20px 25px;
-}
-
-.titulo h3 {
-    font-size: 28px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.titulo h2 {
-    font-size: 42px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    margin-top: 6px;
-}
-
-.catalogos {
-    padding: 35px 20px 70px;
-}
-
 }
