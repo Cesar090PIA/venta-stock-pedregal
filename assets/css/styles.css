@@ -22,8 +22,8 @@ nav {
     justify-content: center;
     align-items: end;
     width: 80%;
-    height: 100px;
-    padding: 25px;
+    height: 80px;
+    padding: 15px;
     border-bottom: 1px solid black;
 }
 
@@ -42,7 +42,7 @@ article {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 90px 20px 80px;
+    padding: 30px 20px 60px;
 }
 
 .catalogo-enlace {
